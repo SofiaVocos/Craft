@@ -1,0 +1,448 @@
+
+/*======== MEDIA QUERIES ========*/
+
+@media screen and (max-width: 745px){
+
+    /*======== Nosotros ========*/
+
+    .frase{
+        h2{
+            margin-bottom: .3rem;
+            padding-top: .5rem;
+            font-size: 1.7rem;
+
+            strong{
+                font-size: 1.75rem;
+            }
+        }
+    }
+
+    .partes{
+        margin: 1.25rem 0 !important;
+        flex-direction: column !important;
+                
+        &:nth-child(2){
+            flex-direction: column !important;
+        }
+
+        .datos{
+            border-radius: 1rem 1rem 0 0 !important;
+        }
+
+        .foto{
+            border-radius: 0 0 1rem 1rem !important;
+        }
+    }
+
+    /*======== Contacto ========*/
+
+    .card{
+        margin: .7rem 0 !important;
+        .filas{
+            .primeraFila, .segundaFila{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+
+                .izquierda{
+                    margin-right: 0rem !important;
+                }
+
+                .derecha{
+                    margin-left: 0rem !important;
+                }
+            }
+        }
+    }
+
+    /*======== Preguntas Frecuentes ========*/
+
+    .categoria{
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 992px){
+
+    /*======== Productos ========*/
+    .productos{
+        .allProducts{
+            .card{
+                .card-img{
+                    height: 57vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px){
+
+    /*======== Productos ========*/
+    .productos{
+        .allProducts{
+            .card{
+                .card-img{
+                    height: 85vh;
+                }
+    
+                .card-body{
+
+                    h4{
+                        font-size: 1.3rem;
+                    }
+
+                    .card-title{
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .card-text{
+                        font-size: 1rem;
+                    }
+                    
+                    .btn-lg {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .productos{
+        .allProducts{
+            .card{
+                .card-body{
+
+                    h4{
+                        font-size: 1.3rem;
+                    }
+
+                    .card-title{
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .card-text{
+                        font-size: 1rem;
+                    }
+                    
+                    .btn-lg {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 745px) and (max-width: 1023px){
+    
+    /*======== INDEX- Carrusel ========*/
+
+    .carousel-inner{
+        .carousel-capt{
+            top: none;
+
+            h3{
+                font-size: 1.9rem
+            }
+        }
+    }
+    
+    /*======== INDEX- Categorías ========*/
+    
+    .cat{
+        .card{
+            .img-card{
+                height: 40vh;
+            }
+        }
+    }
+}
+    
+
+@media screen and (min-width:576px) and (max-width: 744px){
+
+    /*======== Header ========*/
+
+    .nav-custom{
+        font-size: .8rem;
+
+        .navbar-toggler{
+            font-size: 1.1rem;
+        }
+
+        .navbar-collapse{
+            .dropdown-menu{
+                font-size: .8rem;
+            }
+        }
+    } 
+
+    /*======== INDEX- Carrusel ========*/
+
+    .carousel-inner{
+        .carousel-capt{
+            top: 7.5rem;
+    
+            h3{
+                font-size: 1.75rem
+            }
+    
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    /*======== Títulos ========*/
+    
+    .titulos{
+        border-top: .6rem solid $gris;
+
+        .text-titulos{
+            padding: 0.2rem;
+        }
+
+        h2{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        hr{
+            border-top: 3px solid $naranja;
+            margin-top: .7rem;
+        }
+    }
+
+   /*======== INDEX- Categorías ========*/
+
+    .cat{
+        .card{
+            .img-card{
+                height: 65vh;
+            }
+        }
+    }
+
+    /*======== Footer ========*/
+
+    .footer{
+        img{
+            width: 130px;
+            height: 110px;
+        }
+    }
+}
+
+@media screen and (min-width:355px) and (max-width: 576px){
+
+    /*======== Header ========*/
+    .nav1{
+        .buscador{
+            padding-left: 0.2rem;
+
+            form{
+                input{
+                    font-size: 0.75rem;
+                    padding: 0.375 0.4rem;
+                }
+        
+                .btn-lg {
+                    padding: 0.2rem 0.5rem!important;
+                }
+            }
+        }
+
+        .icon{
+            flex: 20%;
+            font-size: 1.1rem;
+            height: 2rem;
+    
+            .fa-shopping-cart, .fa-heart{
+                padding-right: 1rem;
+            }
+        }
+    }
+    
+
+    .navbar{
+        padding: none;
+    }
+
+    .nav-custom{
+        font-size: .7rem;
+        .navbar-brand{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .navbar-toggler{
+            font-size: 1.1rem;
+        }
+
+        .navbar-collapse{
+            .dropdown-menu{
+                font-size: .7rem;
+            }
+        }
+    }
+
+    /*======== INDEX- Carrusel ========*/
+
+    .carousel-inner{
+        .carousel-capt{
+            top: 7.5rem;
+
+            h3{
+                font-size: 1.5rem
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /*======== Títulos ========*/
+    
+    .titulos{
+        border-top: .6rem solid $gris;
+
+        .text-titulos{
+            padding: 0.2rem;
+        }
+
+        h2{
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        hr{
+            border-top: 3px solid $naranja;
+            margin-top: .5rem;
+        }
+    }
+
+    /*======== INDEX- Categorías ========*/
+
+    .cat{
+        .card{
+            .c-1{
+                font-size: 1.3rem;
+            }
+
+            .img-card{
+                height: 60vh;
+            }
+
+            .btn-lg{
+                font-size: .8rem;
+            }
+        }
+    }
+
+    /*======== INDEX- Newsletter ========*/
+
+    #newsletter{
+        h2{
+             font-size: 1.2rem;
+        }
+
+        p{
+             font-size: .9rem;
+        }
+
+        form{
+            input{
+                width: 60%;
+                font-size: 0.75rem;
+                padding: 0.375 0.4rem;
+            }
+
+            .btn-lg {
+                padding: 0.4rem 0.5rem;
+                font-size: .75rem;
+            }
+         }
+     }
+
+    /*======== INDEX- Servicios ========*/
+    .servicios{
+        padding-top: none;
+        padding-bottom: none;
+        
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        h5{
+            font-size: 1rem;
+        }
+
+        p{
+            font-size: .8rem;
+
+        }
+    }
+
+    /*======== INDEX- Banner ========*/
+
+    .banner{
+        marquee{
+            h3{
+                font-size: 1.3rem;
+            }
+        }
+
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+
+            strong{
+                font-size: 4.5rem;
+            }
+        }
+
+        .btn-lg{
+            padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+            font-size: .75rem;
+        }
+    }
+
+    /*======== Footer ========*/
+    .footer{
+        img{
+            width: 100px;
+            height: 80px;
+        }
+        h5{
+            font-size: .75rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+    }
+
+    /*======== Medios de Pago ========*/
+    .mediosDePago{
+        padding-top: .5rem;
+        padding-bottom: none;
+
+        p{
+            margin-bottom: .75rem;
+            font-size: .75rem;
+        }
+
+        img{
+            width: 40px;
+            height: 30px;
+        }
+    }
+}

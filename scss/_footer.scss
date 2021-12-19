@@ -1,0 +1,47 @@
+
+/*======== FOOTER ========*/
+.footer{
+    background: $negro;
+
+    a{
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        border-radius: 0.2rem;
+
+        &:hover{
+            transform: translateY(-4px);
+            transition: all 0.5s ease;
+        }
+
+        img{
+            width: 150px;
+            height: 130px; 
+        }
+    }
+
+    .text-warning {
+        color: #FF9933!important;
+    }
+
+    .btn-outline-light:hover {
+        border-color: #ff9933;
+    }
+
+    hr {
+        border-top: 1px solid #ff993391;
+    }
+
+    p{
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    h5{
+        font-size: $normal-font-size;
+        font-weight: $font-semi-bold;
+    }
+}
+
+.mediosDePago{
+    background: $gris;
+}

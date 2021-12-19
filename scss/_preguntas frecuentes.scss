@@ -1,0 +1,50 @@
+
+/*======== PREGUNTAS FRECUENTES ========*/
+.preguntasFrecuentes{
+    background-color: $gris;
+    .categoria{
+        margin: 0 auto;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 75rem;
+
+        .nombre{
+            flex: 20%;
+            height: 13rem;
+            width: 18rem;
+            text-align: center;
+            padding: 1.25rem;
+            border-radius: 1rem;
+            background-color: $naranja;
+            font-weight: bold;
+            color: black;
+            border: 2px solid $negro;
+            transition: .3s ease all;
+            margin-right: 1rem;
+
+            img{
+                width: 6.25rem;
+                height: 6.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            p{
+                color: $negro;
+                font-size: $big-font-size;
+                font-weight: $font-semi-bold;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .acordeon{
+            flex: 80%;
+            border-radius: 1rem;
+            .card{
+                border: 1px solid $naranja;
+            }
+        }
+    }
+}

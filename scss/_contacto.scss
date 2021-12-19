@@ -1,0 +1,233 @@
+
+/*======== CONTACTO ========*/
+
+.contacto{
+    background-color: $gris;
+
+    .allContacto{
+        margin: 0 auto;
+        max-width: 90rem;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tit{
+            h2{
+                color: $negro;
+                font-style: oblique;
+                margin-bottom: 1rem;
+                padding-top: 1rem;
+                text-align: center;
+        
+                strong{
+                    color: $naranja;
+                    font-size: $biggest-font-size;
+                    letter-spacing: 0.2rem;
+                    line-height: 1.2;
+                }
+            }
+        }
+
+        .subtit{
+            .arriba{
+                border-top: 2px solid $naranja;
+                margin: 0.3rem 0 !important;
+                width: 100%;
+            }
+            h3{
+                font-size: $big-font-size;
+                font-weight: $font-bold;
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+
+        .contact{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+
+            .iconos{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .icono{
+                    width: 18rem;
+                    text-align: center;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    background-color: $naranja;
+                    font-weight: bold;
+                    color: black;
+                    transition: .3s ease all;
+                    margin-bottom: 1rem;
+                    margin-right: 2rem;
+        
+                    i{
+                        width: 3rem;
+                        height: 3rem;
+                        margin-bottom: 1.25rem;
+                        font-size: $h2-font-size;
+                        .fa-clock, .fa-map-marker-alt{
+                            height: 2.5rem;
+                        }
+                    }
+        
+                    h3{
+                        color: $negro;
+                        font-size: $big-font-size;
+                        font-weight: $font-semi-bold;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding-bottom: .5rem;
+                    }
+                    p{
+                        font-weight: $font-medium;
+                        margin-bottom: 0.3rem;
+                    }
+                }    
+            }
+
+            .mapa{
+                width: 100%;
+            }
+        }
+
+        .formulario{
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+
+            .card{
+                margin: 3rem 0;
+                background-color: $negro;
+                border-radius: 1rem;
+
+                .filas{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    .primeraFila, .segundaFila{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 100%;
+
+                        .izquierda{
+                            margin-right: 0.7rem;
+                        }
+
+                        .derecha{
+                            margin-left: 0.7rem;
+                        }
+
+                        .izquierda, .derecha{
+                            width: 100%;
+
+                            .form-group{
+                                label{
+                                    color: $blanco;
+                                }
+                                input, select{
+                                    width: 100%;
+                                    height: calc(1.5em + 0.75rem + 2px);
+                                    padding: 0.375rem 0.75rem;
+                                    font-size: $big-font-size;
+                                    line-height: 1.5;
+                                    color: #495057;
+                                    background-color: $blanco;
+                                    background-clip: padding-box;
+                                    border: 1px solid $naranja;
+                                    border-radius: 0.25rem;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .terceraFila{
+                        width: 100%;
+                        .form-group{
+                            label{
+                                color: $blanco;
+                            }
+                            textarea{
+                                width: 100%;
+                                padding: 0.375rem 0.75rem;
+                                font-size: $big-font-size;
+                                line-height: 1.5;
+                                color: #495057;
+                                background-color: $blanco;
+                                background-clip: padding-box;
+                                border: 1px solid $naranja;
+                                border-radius: 0.25rem;
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .cuartaFila, .quintaFila{
+                        width: 100%;
+                        .form-group{
+                            label{
+                                color: $blanco;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-lg {
+                padding: 0.5rem 0.5rem;
+                font-size: 1rem;
+            }
+    
+            .boton{
+                background-color: $naranja;
+                color: $negro;
+    
+                &:hover {
+                  background-color: $negro;
+                  border: 1px solid $naranja;
+                  transition: all 0.5s ease;
+                  box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+                  color: $blanco;
+                  text-decoration: none;
+                  transform: translateY(-2px);
+                }
+            }
+        }
+    }
+}
+
+.modal-content{
+    .modal-footer{
+        .btn-lg{
+            padding: 0.5rem 0.5rem;
+            font-size: 1rem;
+        }
+
+        .boton{
+            background-color: $naranja;
+            color: $negro;
+
+            &:hover {
+              background-color: $negro;
+              border: 1px solid $naranja;
+              transition: all 0.5s ease;
+              box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+              color: $blanco;
+              text-decoration: none;
+              transform: translateY(-2px);
+            }
+        }
+    }
+}

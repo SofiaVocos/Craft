@@ -1,0 +1,84 @@
+
+/*======== PRODUCTOS ========*/
+
+.productos{
+    background-color: $gris;
+
+    .allProducts{
+        margin: 0 auto;
+        padding: 1rem 0;
+        max-width: 75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .nombreProductos{
+            h2{
+                color: $negro;
+                font-size: $biggest-font-size;
+                letter-spacing: 0.2rem;
+                line-height: 1.2;
+            }
+            .arriba{
+                border-top: 2px solid $naranja;
+                margin: 0.3rem 0 !important;
+                width: 100%;
+            }
+
+        }
+        
+        .ordenar{
+            font-weight: $font-medium;
+            margin-left: 1rem;
+            align-self: flex-start;
+        }
+
+        .card{
+            width: 100%;
+    
+            .card-img{
+                object-fit: cover;
+                height: 60vh;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    transition: all 0.75s;
+                }
+            }
+
+            .card-body{
+                .fa-star{
+                    color: #ff9529;
+                }
+                
+                .card-text{
+                    font-weight: $font-bold;
+                }
+                
+                .text-dange{
+                    color: red;
+                }
+    
+                .btn-lg {
+                    padding: 0.5rem 0.5rem;
+                    font-size: 1rem;
+                }
+        
+                .boton{
+                    background-color: $naranja;
+                    color: $negro;
+        
+                    &:hover {
+                      background-color: $negro;
+                      border: 1px solid $naranja;
+                      transition: all 0.5s ease;
+                      box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+                      color: $blanco;
+                      text-decoration: none;
+                      transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+}

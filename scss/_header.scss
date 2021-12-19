@@ -1,0 +1,116 @@
+
+/*======== HEADER ========*/
+
+/*======== Nav ========*/
+
+.nav1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $gris;
+
+    .buscador{
+        flex:60%;
+        position: relative;
+        margin: 0 auto;
+        padding-left: 1rem;
+        flex-wrap: wrap;
+     
+        form{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            input{
+                height: calc(1.5em + 0.75rem + 2px);
+                padding: 0.375rem 0.75rem;
+                font-size: $normal-font-size;
+                font-weight: $font-small;
+                line-height: 1.5;
+                color: #495057;
+                background-color: $blanco;
+                background-clip: padding-box;
+                border: 1px solid $naranja;
+                border-radius: 0.25rem;
+                outline: none;
+                vertical-align: middle;
+            }
+
+            .btn-lg {
+                padding: 0.5rem 1rem !important;
+                font-size: $normal-font-size;
+            }
+    
+            .boton {
+                background-color: $naranja;
+                color: $negro;
+    
+                &:hover {
+                  background-color: $negro;
+                  border: 1px solid $naranja;
+                  transition: all 0.5s ease;
+                  box-shadow: 0px 15px 20px rgba(129, 129, 129, 0.4);
+                  color: $blanco;
+                  text-decoration: none;
+                  transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    .icon{
+        flex: 40%;
+        position: relative;
+        margin: 0 auto;
+        font-size: $bigger-font-size;
+        height: 2.2rem;
+        color: $negro;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       
+        .i1{
+            &:hover{
+                color: $naranja;
+            }
+        }
+
+    }
+}
+
+.nav-custom{
+    background-color: $negro;
+    font-weight: $font-semi-bold;
+    font-size: $normal-font-size;
+    top:0;
+    text-transform: uppercase;
+
+    a{
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        border-radius: 0.2rem;
+
+        &:hover{
+            transform: translateY(-4px);
+            transition: all 0.5s ease;
+        }
+    }
+
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &:hover{
+            border-bottom: $naranja 2px solid; 
+        }
+
+        .dropdown-menu{
+            background-color: $negro;
+        }
+    }
+
+    .activo{
+        border-bottom: $naranja 2px solid;
+    }
+
+}
+

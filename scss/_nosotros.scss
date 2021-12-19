@@ -1,0 +1,116 @@
+
+/*======== NOSOTROS ========*/
+/*======== Quienes somos ========*/
+
+.quienesSomos{
+    background-color: $gris;
+
+    .nosotros{
+        margin: 0 auto;
+        max-width: 75rem;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .frase{
+            h2{
+                color: $negro;
+                font-style: oblique;
+                margin-bottom: .5rem;
+                padding-top: 1rem;
+    
+                strong{
+                    color: $naranja;
+                    font-size: $biggest-font-size;
+                    letter-spacing: 0.2rem;
+                    line-height: 1.2;
+                }
+            }
+        }
+        .nosotros-all{
+            margin: 2rem auto;
+            max-width: 75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .partes{
+                width: 80%;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                &:nth-child(2){
+                    flex-direction: row-reverse;
+                }
+    
+                .datos{
+                    flex-basis: 50%;
+                    padding: 1.5rem;
+                    background-color: $naranja;
+                    height: 100%;
+                    color: $blanco;
+                    border-radius: .7rem 0 0 .7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+    
+                    h2{
+                        font-size: $bigger-font-size;
+                        font-weight: $font-bold;
+                        font-style: oblique;
+                    }
+    
+                    h3{
+                        color: $negro;
+                        font-size: $big-font-size;
+                        font-weight: $font-bold;
+                        margin-top: 0.6rem;
+                    }
+    
+                    p{
+                        font-size: $normal-font-size;
+                        font-size: $font-medium;
+                    }
+                }
+
+                .dos{
+                    border-radius: 0 .7rem .7rem 0;
+                }
+
+                .foto{
+                    flex-basis: 50%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: .7rem;
+    
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: $negro;
+                        opacity: .3;
+                    }
+                }
+                
+                &:hover{
+                    .foto{
+                        transition: .3s ease transform;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
