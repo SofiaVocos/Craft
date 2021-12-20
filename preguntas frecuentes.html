@@ -42,10 +42,74 @@
 </head>
 
 <body>
-    <header>
+
+    <header class="sticky-top">
+        <!-- ======== NAV ======== -->
+
+        <div class="text-black p-2 nav1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="buscador">
+                        <form action="">
+                            <input type="search" class="me-2 search" placeholder="¿Qué estas buscando?"
+                                aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-lg font-weight-bold boton">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart pr-4 i1"></i>
+                        <i class="fas fa-heart pr-4 i1"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logotipo1.png" alt="logotipo" loading="Craft" width="60px" height="60px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pb-2 justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active activo">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html" target="_blank">nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" target="_blank" id="navbardrop"
+                                data-toggle="dropdown">productos</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="productos.html#fotosRacksTv">rack tv</a>
+                                <a class="dropdown-item" href="productos.html#fotosMesasDeLuz">mesas de luz</a>
+                                <a class="dropdown-item" href="productos.html#fotosEscritorios">escritorios</a>
+                                <a class="dropdown-item" href="productos.html#fotosZapateros">zapateros</a>
+                                <a class="dropdown-item" href="productos.html">ver todos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas frecuentes.html" target="_blank">preguntas
+                                frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" target="_blank">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     </header>
-
 
     <main>
 
@@ -288,35 +352,6 @@
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <div class="pagos">
-                    <div class="sobre">
-                        <h2 class="text-uppercase text-center">sobre las<strong><b><br>formas de pago</b></strong></h2>
-                    </div>
-                    <div class="acordeon">
-    
-                    </div>
-                </div>
-    
-                <div class="entregas">
-                    <div class="sobre">
-                        <h2 class="text-uppercase text-center">sobre las<strong><b><br>entregas</b></strong></h2>
-                    </div>
-                    <div class="acordeon">
-    
-                    </div>
-                </div>-->
-
             </div>
         </div>
 
@@ -324,6 +359,116 @@
 
     <footer>
 
+        <!-- ======== FOOTER ======== -->
+
+        <div class="text-white pt-3 pb-3 footer">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-xl-2 col-lg-2 col-md-3 mx-auto mt-3">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logotipo2.png" alt="logotipo" loading="Craft"/>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-3 text-warning">Productos</h5>
+                        <p>
+                            <a href="productos.html#fotosRackTv" class="text-white" style="text-decoration:none">Racks
+                                TV</a>
+                        </p>
+                        <p>
+                            <a href="productos.html#fotosMesasDeLuz" class="text-white"
+                                style="text-decoration:none">Mesas
+                                de luz</a>
+                        </p>
+                        <p>
+                            <a href="productos.hmtl#fotosEscritorios" class="text-white"
+                                style="text-decoration:none">Escritorios</a>
+                        </p>
+                        <p>
+                            <a href="productos.html#fotosZapateros" class="text-white"
+                                style="text-decoration:none">Zapateros</a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-4 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-3 text-warning">Contacto</h5>
+                        <p>
+                            <i class="fas fa-home mr-3"></i>Dr. Emilio Coni 2254, Cordoba, Arg.
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>craft@gmail.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i>+54 9 3513 14 1363
+                        </p>
+                    </div>
+
+                </div>
+
+                <hr class="w-100">
+
+                <div class="p-1">
+                    <div class="container-fluid">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-8 col-md-7 text-center text-md-start">
+                                <div class="p-1">
+                                    <p> Copyright ©2021 All rights reserved by:
+                                        <a href="#" style="text-decoration: none;">
+                                            <strong class="text-warning">The Providers</strong>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-4 col-md-5 ml-lg-0 text-center text-md-end">
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                        class="fab fa-facebook-f"></i>
+                                </a>
+    
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
+                                        class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ======== MEDIOS DE PAGO ======== -->
+
+        <div class="text-black pt-3 pb-1 mediosDePago">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center text-center">
+                    <div class="col-lg-2 col-md-12">
+                        <div class="text-center px-3 text-uppercase">
+                            <p><strong>medios de pago</strong></p>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg-9 col-md-12">
+                        <p class="d-flex flex-row flex-wrap justify-content-around">
+                            <img src="img/medios-de-pago/visa.png" alt="visa" width="55" height="40">
+                            <img src="img/medios-de-pago/mastercard.png" alt="mastercard" width="55" height="40">
+                            <img src="img/medios-de-pago/banelco.png" alt="banelco" width="55" height="40">
+                            <img src="img/medios-de-pago/mercadopago.png" alt="mercadopago" width="55" height="40">
+                            <img src="img/medios-de-pago/amex.png" alt="amex" width="55" height="40">
+                            <img src="img/medios-de-pago/tarjeta-naranja.png" alt="tarjeta-naranja" width="55" height="40">
+                            <img src="img/medios-de-pago/pagofacil.png" alt="pagofacil" width="55" height="40">
+                            <img src="img/medios-de-pago/rapipago.png" alt="rapipago" width="55" height="40">
+                        </p>
+                    </div>
+                    <div class="col-lg-1 col-md-12">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--Font Awesome-->
