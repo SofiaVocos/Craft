@@ -662,7 +662,7 @@ a {
   font-weight: 500;
   margin-bottom: 0.3rem;
 }
-.contacto .allContacto .contact .mapa {
+.contacto .allContacto .contact .map .mapa {
   width: 100%;
 }
 .contacto .allContacto .formulario {
@@ -845,6 +845,51 @@ a {
   }
 
   /*======== Contacto ========*/
+  .contacto .allContacto .tit h2 {
+    font-size: 1.7rem;
+  }
+  .contacto .allContacto .tit h2 strong {
+    font-size: 1.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.2;
+  }
+  .contacto .allContacto .subtit .arriba {
+    margin: 0;
+  }
+  .contacto .allContacto .subtit h3 {
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+  }
+
+  .contacto .allContacto .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto .allContacto .contact .iconos .icono {
+    width: 14rem;
+    padding: 0.75rem;
+    margin-right: 0;
+  }
+  .contacto .allContacto .contact .iconos .icono i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .contacto .allContacto .contact .iconos .icono h3 {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  .contacto .allContacto .contact .iconos .icono p {
+    font-size: 0.8rem;
+  }
+
+  .map .container-fluid {
+    padding: 0;
+  }
+  .map .mapa {
+    height: 18.75rem;
+  }
+
   .card {
     margin: 0.7rem 0 !important;
   }
@@ -859,6 +904,35 @@ a {
   }
   .card .filas .primeraFila .derecha, .card .filas .segundaFila .derecha {
     margin-left: 0rem !important;
+  }
+  .card .filas label {
+    font-size: 0.8rem;
+  }
+
+  .contacto .allContacto .formulario .card .filas .primeraFila .derecha .form-group input {
+    font-size: 0.75rem;
+    padding: 0.375 0.4rem;
+  }
+  .contacto .allContacto .formulario .card .filas .primeraFila .izquierda .form-group input {
+    font-size: 0.75rem;
+    padding: 0.375 0.4rem;
+  }
+  .contacto .allContacto .formulario .card .filas .segundaFila .derecha .form-group select {
+    font-size: 0.75rem;
+    padding: 0.375 0.4rem;
+  }
+  .contacto .allContacto .formulario .card .filas .segundaFila .izquierda .form-group input {
+    font-size: 0.75rem;
+    padding: 0.375 0.4rem;
+  }
+
+  .contacto .allContacto .formulario .btn-lg {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .form-control-file {
+    font-size: 0.75rem;
   }
 
   /*======== Preguntas Frecuentes ========*/
@@ -892,6 +966,7 @@ a {
   }
 }
 @media screen and (max-width: 400px) {
+  /*======== Productos ========*/
   .productos .allProducts .card .card-body h4 {
     font-size: 1.3rem;
   }
